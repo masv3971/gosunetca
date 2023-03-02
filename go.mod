@@ -1,4 +1,4 @@
-module gosunetca
+module github.com/masv3971/gosunetca
 
 go 1.19
 

@@ -1,7 +1,7 @@
 package mocks
 
 import (
-	"gosunetca/types"
+	"github.com/masv3971/gosunetca/types"
 )
 
 // JSONSignDocumentRequest200 is a sample request to the Sign endpoint.

@@ -2,8 +2,9 @@ package gosunetca
 
 import (
 	"context"
-	"gosunetca/types"
 	"net/http"
+
+	"github.com/masv3971/gosunetca/types"
 )
 
 type endpointsSign struct {

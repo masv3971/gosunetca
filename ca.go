@@ -6,10 +6,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"gosunetca/types"
 	"io"
 	"net/http"
 	"net/url"
+
+	"github.com/masv3971/gosunetca/types"
 )
 
 // Client is the client for the SUNET CA API

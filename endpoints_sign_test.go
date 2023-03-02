@@ -3,10 +3,11 @@ package gosunetca
 import (
 	"context"
 	"encoding/json"
-	"gosunetca/mocks"
-	"gosunetca/types"
 	"net/http"
 	"testing"
+
+	"github.com/masv3971/gosunetca/mocks"
+	"github.com/masv3971/gosunetca/types"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
