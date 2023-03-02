@@ -102,10 +102,10 @@ var MockReplySign = &types.SignReply{
 
 // JSONReply401 is a sample response from CA when token is missing.
 var JSONReply401 = []byte(`{
-		"message": "Missing Authorization token"
+		"message": "Missing valid authorization token"
 }`)
 
 // MockErrorReplyMissingToken is a sample response from ca when token is missing.
 var MockErrorReplyMissingToken = &types.ErrorReply{
-	Message: "Missing Authorization token",
+	Message: "Missing valid authorization token",
 }
