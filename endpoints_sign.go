@@ -7,12 +7,14 @@ import (
 	"github.com/masv3971/gosunetca/types"
 )
 
-type endpointsSign struct {
+// SignService is the service for signing
+type SignService struct {
 	client   *Client
 	endpoint string
 }
 
-func (s *endpointsSign) Documents(ctx context.Context, body *types.SignRequest) (*types.SignReply, *http.Response, error) {
+// Documents signs documents
+func (s *SignService) Documents(ctx context.Context, body *types.SignRequest) (*types.SignReply, *http.Response, error) {
 	if err := Check(body); err != nil {
 		return nil, nil, err
 	}

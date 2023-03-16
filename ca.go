@@ -20,7 +20,7 @@ type Client struct {
 	serverURL string
 	userAgent string
 
-	Sign *endpointsSign
+	Sign *SignService
 }
 
 // Config is the configuration for the client
@@ -43,7 +43,7 @@ func New(config Config) (*Client, error) {
 		userAgent: config.UserAgent,
 	}
 
-	c.Sign = &endpointsSign{client: c, endpoint: "/pkcs11_sign"}
+	c.Sign = &SignService{client: c, endpoint: "/pkcs11_sign"}
 
 	return c, nil
 }
