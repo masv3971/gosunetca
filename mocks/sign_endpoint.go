@@ -84,18 +84,21 @@ var MockReplySign = &types.SignReply{
 		SignerPublicKey:    "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE32cZi4nLmKIxdwbzg6BcDfOPQoJ+\n5NyBNFt2BceWkZ+Rv+gJXOkrb5isXo5IOtvPzDRJLs9GL35du0hChwOGnw==\n-----END PUBLIC KEY-----\n",
 		SignatureAlgorithm: "sha256_ecdsa",
 	},
-	SignatureValues: []types.SignedDocument{
+	SignedDocuments: []types.SignedDocument{
 		{
-			ID:        "e06a50d2-b687-11ed-9fd2-0bad217296d7",
-			Signature: "MEUCIQDz2Uqs1GE5sJGgW2R1gVTJRJdj8JVxqwMzNnboiNA9pAIgFhWhr85H/EARoyotYhjjI49SWOnsvQpl4jnzpZ0rMj0=",
+			ID:         "e06a50d2-b687-11ed-9fd2-0bad217296d7",
+			Data:       "",
+			SHA256Hash: "",
 		},
 		{
-			ID:        "e06a50d2-b687-11ed-9fd2-0bad217296d8",
-			Signature: "MEQCIAJ2fcp/sSODCXbkr0HWCkdLYBgYtCzTdqC65bAOLj1PAiAqPv5kNZdtkdATrRYjZ8TETV0dsPUOz6zQutCEk7Uq/g==",
+			ID:         "e06a50d2-b687-11ed-9fd2-0bad217296d8",
+			Data:       "",
+			SHA256Hash: "",
 		},
 		{
-			ID:        "e06a50d2-b687-11ed-9fd2-0bad217296d9",
-			Signature: "MEUCIQCODv6ydL1VIysPdStkqn9Qsfe/eUCfGMKP8jMZfdVNogIgXg6ReSW3/uA+RaQ3XsonH+7ovrstEFm22iwpUbGwtZE=",
+			ID:         "e06a50d2-b687-11ed-9fd2-0bad217296d9",
+			Data:       "",
+			SHA256Hash: "",
 		},
 	},
 }

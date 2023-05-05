@@ -32,15 +32,15 @@ type SignMetaReply struct {
 
 // SignedDocument is a document that has been signed
 type SignedDocument struct {
-	ID     string `json:"id"`
-	Data   string `json:"data,omitempty"`   //base64 encoded
-	Hashed string `json:"hashed,omitempty"` //sha256 hash
+	ID         string `json:"id"`
+	Data       string `json:"data,omitempty"` //base64 encoded
+	SHA256Hash string `json:"sha256_hash,omitempty"`
 }
 
 // SignReply is the reply for the sign endpoint
 type SignReply struct {
 	Meta            SignMetaReply    `json:"meta"`
-	SignatureValues []SignedDocument `json:"signature_values"`
+	SignedDocuments []SignedDocument `json:"signed_documents"`
 }
 
 // MissingTokenReply is the reply when the token is missing
