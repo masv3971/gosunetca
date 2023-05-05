@@ -15,7 +15,7 @@ type SignService struct {
 
 // Documents signs documents
 func (s *SignService) Documents(ctx context.Context, body *types.SignRequest) (*types.SignReply, *http.Response, error) {
-	if err := Check(body); err != nil {
+	if err := check(body); err != nil {
 		return nil, nil, err
 	}
 

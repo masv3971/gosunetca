@@ -32,7 +32,7 @@ type Config struct {
 
 // New create a new client
 func New(config Config) (*Client, error) {
-	if err := Check(config); err != nil {
+	if err := check(config); err != nil {
 		return nil, err
 	}
 

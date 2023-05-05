@@ -9,7 +9,7 @@ func mockClient(t *testing.T, severURL string) *Client {
 		ServerURL: severURL,
 		Token:     "test-token",
 	}
-	if err := Check(cfg); err != nil {
+	if err := check(cfg); err != nil {
 		t.Errorf("mockClient: %v", err)
 		t.FailNow()
 	}

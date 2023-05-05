@@ -32,8 +32,9 @@ type SignMetaReply struct {
 
 // SignedDocument is a document that has been signed
 type SignedDocument struct {
-	ID        string `json:"id"`
-	Signature string `json:"signature"`
+	ID     string `json:"id"`
+	Data   string `json:"data,omitempty"`   //base64 encoded
+	Hashed string `json:"hashed,omitempty"` //sha256 hash
 }
 
 // SignReply is the reply for the sign endpoint
